@@ -1,0 +1,24 @@
+STUDENT GROUP FROM HACKERRANK 
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() 
+{
+    int a;
+    scanf("%d",&a);
+    if(a>=100 && a<=200)
+    {
+        int r=a/4;
+         printf("%d\n%d\n%d\n%d\n",r,r,r,r+a%4);
+    }
+    else
+    {
+        printf("INVALID INPUT");
+    }
+    return 0;
+}
