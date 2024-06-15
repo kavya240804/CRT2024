@@ -1,0 +1,42 @@
+structure2
+read employee no,name,and basic salary.Calculate HRA,DA,PF,Gross salaryand net salary
+HRA------>15% of salary
+DA------->12% of salary
+Pf------->5% of salary
+Gross---->salary+HRA+DA
+Net------>Gross-pf
+#include <stdio.h>
+
+struct employee{ 
+    int empno;
+    char name[20];
+    float basic,hra,da,pf,gross,net;
+};
+struct employee e;
+int main()
+{
+    printf("enter emplyoee no:");
+    scanf("%d",&e.empno);
+    printf("enter name");
+    scanf("%s",e.name);
+    printf("Enter basic salary:");
+    scanf("%f",&e.basic);
+    e.hra=e.basic*15/100;
+    e.da=e.basic*12/100;
+    e.pf=e.basic*5/100;
+    e.gross=e.basic+e.hra+e.da;
+    e.net=e.gross-e.pf;
+    printf("Employee no=%d\n",e.empno);
+    printf("Name =%s\n",e.name);
+    printf(" Basic  salary=%2.f\n",e.basic);
+    printf("HRA=%2.f\n",e.hra);
+    printf("DA=%.2f\n",e.da);
+    printf("PF=%.2f\n",e.pf);
+    printf("Gross salary =%.2f\n",e.gross);
+    printf("Net salary=%.2f\n",e.net);
+
+
+
+
+    return 0;
+}
