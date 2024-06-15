@@ -1,0 +1,31 @@
+structures
+structers is a way to group the different data elemenats
+syntax:
+struct structurename
+{
+  datatype member1;
+  datatype member2;
+-------
+-----
+};
+ex:
+struct Employee
+{
+int empno;
+char name[30];
+float salary;
+};
+To access the structers memmbers using structers variable.
+to create structure variable:
+1)tag name
+syntax:
+struct structrename strutrevariables;
+example:
+struct sample
+{
+int a;
+char b;
+double c;
+};
+struct sample s;
+
