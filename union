@@ -1,0 +1,10 @@
+union lecture
+UNION are used to group the different data.
+The main difference between structures  and union in memory space.
+Structure allocates memory for all members, but union  allocates memory for only memeber that is highest data type
+union example
+union sample {
+int a;
+char b;
+duble c;
+}
